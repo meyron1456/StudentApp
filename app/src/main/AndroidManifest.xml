@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.StudentsApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Students List"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Class3Demo2">
+        <activity
+            android:name="com.example.exercise2.NewStudentActivity"
+            android:label="New Student"
+            android:exported="false" />
+        <activity
+            android:name="com.example.exercise2.EditStudentActivity"
+            android:label="Edit Students"
+            android:exported="false" />
+        <activity
+            android:name="com.example.exercise2.StudentDetails"
+            android:label="Students Details"
+            android:exported="false" />
+        <activity
+            android:name="com.example.exercise2.StudentListRvActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.exercise2.StudentListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.exercise2.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
